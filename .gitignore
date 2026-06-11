@@ -1,0 +1,95 @@
+# ============================================================
+# PYTHON / DJANGO
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.pyc
+
+# Entorno virtual
+venv/
+env/
+ENV/
+
+# Django
+*.log
+*.pot
+db.sqlite3
+media/
+staticfiles/
+static/
+
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+
+# Migraciones (opcional — muchos equipos sí las incluyen)
+# backend/apps/*/migrations/
+
+# Coverage
+.coverage
+htmlcov/
+coverage.xml
+
+# Pytest
+.pytest_cache/
+pytest.ini
+
+# mypy
+.mypy_cache/
+dmypy.json
+
+# ============================================================
+# REACT / VITE / NODE
+# ============================================================
+node_modules/
+dist/
+dist-ssr/
+*.local
+.cache/
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# ============================================================
+# DOCKER
+# ============================================================
+.docker/
+docker-compose.override.yml
+
+# ============================================================
+# VSCODE
+# ============================================================
+.vscode/
+!.vscode/extensions.json
+
+# ============================================================
+# WINDOWS
+# ============================================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# ============================================================
+# SISTEMAS OPERATIVOS (general)
+# ============================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# ============================================================
+# MISCELÁNEOS
+# ============================================================
+*.bak
+*.swp
+*.swo
+*.tmp
+*.orig
