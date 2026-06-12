@@ -1,0 +1,125 @@
+.formulario-container {
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.formulario-box {
+  margin: 3rem 0;
+  width: 70%;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: white;
+}
+
+.formulario-title {
+  color: #ff3a3a;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.formulario-label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.formulario-input {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-bottom: 0.8rem;
+}
+
+.formulario-div-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.formulario-div-column {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.formulario-subdiv-column {
+  flex: 1;
+  min-width: 250px;
+}
+
+.formulario-error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.8rem;
+  text-align: left;
+}
+
+/* Botones */
+.formulario-button,
+.formulario-button-volver,
+.formulario-button-eliminar {
+  width: 160px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+  margin: 1rem 0.5rem;
+  padding: 0.2rem;
+}
+
+.formulario-button {
+  background: #ff3a3a;
+  color: white;
+}
+
+.formulario-button:hover {
+  background-color: #c00;
+}
+
+.formulario-button-volver {
+  background-color: #cccccc;
+  color: #333;
+}
+
+.formulario-button-volver:hover {
+  background-color: #a9a9a9;
+}
+
+.formulario-button-eliminar {
+  background-color: #ff7272;
+  color: white;
+}
+
+.formulario-button-eliminar:hover {
+  background-color: #d10000;
+}
+
+/* Registro */
+.formulario-ptext {
+  color: gray;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+.formulario-atext {
+  color: #ff3a3a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.formulario-atext:hover {
+  text-decoration: underline;
+}

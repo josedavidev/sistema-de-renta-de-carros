@@ -1,0 +1,57 @@
+/* CONTENEDOR PRINCIPAL */
+.choice-vehicle-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem 2rem;
+}
+
+/* TÍTULOS PRINCIPALES */
+.choice-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* MENSAJES DE ESTADO */
+.choice-message {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* BOTÓN DE VOLVER */
+.back-button {
+  background-color: #ff3a3a;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #e63333;
+}
+
+/* CONTENEDOR DE CATEGORÍAS Y VEHÍCULOS */
+.category-list,
+.vehicle-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* CARDS CON INTERACCIÓN */
+.category-card,
+.vehicle-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover,
+.vehicle-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

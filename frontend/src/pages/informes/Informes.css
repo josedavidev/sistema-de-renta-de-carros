@@ -1,0 +1,125 @@
+/* Informes.css */
+
+/* Contenedor principal centrado */
+.informes-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+/* Contenedor del contenido central */
+.informes-content {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Título principal */
+.informes-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+/* Formulario */
+.informes-form {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Filas del formulario */
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Cada grupo (columna) del formulario */
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Si se requiere ocupar toda la fila */
+.form-group.full-width {
+  flex: 1 1 100%;
+}
+
+/* Etiqueta flotante */
+.floating-label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+/* Input con solo línea inferior */
+.floating-input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 0.5rem 0;
+  outline: none;
+  font-size: 1rem;
+}
+
+.floating-input:focus {
+  border-bottom-color: #007bff;
+}
+
+/* Para textarea, se puede ajustar */
+.floating-input textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Grupo de input con lupa (buscador) */
+.search-input {
+  position: relative;
+}
+
+.search-input input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 0.5rem 0;
+  outline: none;
+  font-size: 1rem;
+}
+
+.search-input input:focus {
+  border-bottom-color: #007bff;
+}
+
+.search-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Botón de Confirmar */
+.confirm-btn {
+  width: 100%;
+  background-color: #ff3a3a;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.confirm-btn:hover {
+  background-color: #c00;
+}

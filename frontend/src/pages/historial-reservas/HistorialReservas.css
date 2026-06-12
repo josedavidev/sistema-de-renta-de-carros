@@ -1,0 +1,136 @@
+/* HistorialReservas.css */
+
+/* Contenedor principal: centrar el contenido vertical y horizontalmente */
+.historial-reservas-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+/* Contenedor del contenido central */
+.historial-reservas-content {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Título principal */
+.historial-reservas-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+/* Formulario (menu de búsqueda) */
+.historial-reservas-form {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+/* Filas del formulario */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Grupo de input */
+.input-group {
+  flex: 1;
+  position: relative;
+  text-align: left;
+}
+
+/* Etiqueta flotante */
+.floating-label {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+/* Input con solo línea inferior */
+.floating-input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 0.5rem 0;
+  outline: none;
+  font-size: 1rem;
+}
+
+.floating-input:focus {
+  border-bottom-color: #007bff;
+}
+
+/* Contenedor de input con lupa */
+.search-input {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Botón de Buscar */
+.buscar-btn {
+  width: 100%;
+  background-color: #ff3a3a;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.buscar-btn:hover {
+  background-color: #c00;
+}
+
+/* Dropdown de resultados */
+.resultados-dropdown {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: left;
+}
+
+.resultado-item {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.resultado-item:last-child {
+  border-bottom: none;
+}
+
+.resultado-status {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.resultado-detalle {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0.25rem 0 0 0;
+}

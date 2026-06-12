@@ -1,0 +1,8 @@
+.carros-type-container {
+  text-align: center;
+}
+.carros-type-title {
+  text-transform: capitalize;
+  color: #ff3a3a;
+  font-size: 2.5rem;
+}

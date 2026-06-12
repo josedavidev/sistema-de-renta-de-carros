@@ -1,0 +1,17 @@
+/* src/components/StarRating.css */
+.star-rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star {
+    font-size: 1rem; /* Ajusta el tamaño de la estrella */
+    color: gray;
+    margin-right: 0.2rem;
+    transition: color 0.2s;
+  }
+  
+  .star.active {
+    color: gold;
+  }
+  

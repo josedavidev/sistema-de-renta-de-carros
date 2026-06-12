@@ -1,0 +1,72 @@
+.receptionist-container {
+  font-family: "Arial", sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.receptionist-searchBar {
+  background-color: white;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.receptionist-input,
+.receptionist-select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.receptionist-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.receptionist-mainBox {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  gap: 20px;
+  width: 800px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
+}
+
+.receptionist-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.receptionist-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.receptionist-entryBox {
+  background-color: #eaeaea;
+  height: 50px;
+  border-radius: 12px;
+}
+
+.receptionist-divider {
+  width: 1px;
+  background-color: #ccc;
+}

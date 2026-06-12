@@ -1,0 +1,101 @@
+/* Sección principal (contenedor grande) */
+.datos-user-section {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+/* Contenedor del formulario */
+.datos-user-form {
+  max-width: 1000px;
+  width: 100%;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem auto;
+}
+
+/* Estructura de campos */
+.datos-user-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .datos-user-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .datos-user-grid-full {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Etiquetas */
+.datos-user-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Inputs y selects */
+.datos-user-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.75rem;
+  background-color: #f9f9f9;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.datos-user-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+  outline: none;
+}
+
+/* Mensajes de error */
+.datos-user-error {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  color: #d32f2f;
+}
+
+/* Contenedor del checkbox */
+.datos-user-terms {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Botón */
+.datos-user-submit {
+  display: flex;
+  justify-content: center;
+}
+
+.datos-user-button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.datos-user-button:hover {
+  background-color: #0056b3;
+}

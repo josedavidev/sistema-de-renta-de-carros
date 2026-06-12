@@ -1,0 +1,19 @@
+/* Asegura que ocupe toda la altura de la ventana y se comporte como un layout vertical */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 100% de la altura de la ventana */
+  margin: 0; /* Quita márgenes por si acaso */
+  padding: 0;
+}
+
+/* El contenido principal crecerá y empujará el footer hacia abajo */
+.content-wrap {
+  flex: 1 0 auto;
+  /* Cualquier padding o margen adicional que quieras, puedes ponerlo aquí */
+}
+
+/* Opcional: si deseas algún estilo particular para el footer dentro de este layout */
+footer {
+  flex-shrink: 0; /* Evita que el footer se encoja */
+}

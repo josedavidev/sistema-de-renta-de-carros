@@ -1,0 +1,82 @@
+/* Configuración básica para las columnas del formulario */
+.formvehicles-column {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en nuevas filas si no caben en una sola fila */
+  justify-content: space-evenly; /* Espaciado uniforme entre elementos */
+  gap: 20px; /* Espacio entre columnas */
+}
+
+/* Estilo de cada div de entrada dentro de las columnas */
+.formvehicles-div-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Asegura que los inputs ocupen el 100% del espacio disponible */
+  max-width: 300px; /* Limita el ancho de los inputs */
+  margin-bottom: 15px; /* Espacio entre los campos de entrada */
+}
+
+.formvehicles-div-title {
+  display: flex;
+  justify-content: center;
+}
+
+.formvehicles-title {
+  color: #ff3a3a;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Estilo para las etiquetas del formulario */
+.formvehicles-label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+/* Estilo para los inputs del formulario */
+.formvehicles-input {
+  padding: 0.7rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-bottom: 0.8rem;
+}
+
+/* Estilo para los mensajes de error */
+.formvehicles-error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.formvehicles-div-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo básico para los botones */
+.formvehicles-div-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  margin: 0.5rem;
+}
+
+.formvehicles-div-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.formvehicles-div-buttons button[type="button"] {
+  background-color: #ccc;
+}
+
+.formvehicles-div-buttons button[type="button"]:hover {
+  background-color: #888;
+}

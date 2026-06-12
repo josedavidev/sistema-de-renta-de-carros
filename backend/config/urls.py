@@ -14,9 +14,31 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from drf_spectacular.views import (
+    SpectacularAPIView,
+    SpectacularSwaggerView,
+    SpectacularRedocView,
+)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path("admin/", admin.site.urls),
+    path("users/", include("apps.users.urls")),
+    path("rents/", include("apps.rents.urls")),
+    path("report/", include("apps.reports.urls")),
+    path("vehicles/", include("apps.vehicles.urls")),
+    path("payments/", include("apps.payments.urls")),
+    # DOCUMENTATION API
+    # Genera el esquema de la API en formato OpenAPI (JSON/YAML)
+    path("api/schema/", SpectacularAPIView.as_view(), name="schema"),
+    # Interfaz de documentación en Swagger UI
+    path(
+        "api/docs/",
+        SpectacularSwaggerView.as_view(url_name="schema"),
+        name="swagger-ui",
+    ),
+    # Alternativa con ReDoc UI
+    path("api/redoc/", SpectacularRedocView.as_view(url_name="schema"), name="redoc"),
 ]

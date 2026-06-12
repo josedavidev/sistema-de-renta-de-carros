@@ -1,0 +1,129 @@
+.admin-container {
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.admin-dv-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.admin-title {
+  font-size: 2.5rem;
+  color: #ff3a3a;
+}
+
+.admin-stats {
+  margin-bottom: 2.5rem;
+}
+
+.admin-div-subtitle-stats {
+  margin-bottom: 1rem;
+}
+
+.admin-subtitle-stats {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.admin-div-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.admin-subdiv-stats {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  text-align: center;
+  width: 180px;
+}
+
+.admin-name-stat {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.admin-number-stat {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ff3a3a;
+}
+
+.admin-activities {
+  margin-bottom: 2.5rem;
+}
+
+.admin-activity-list {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-activity-item {
+  background-color: #fff;
+  border-left: 4px solid #ff3a3a;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.admin-alerts {
+  margin-bottom: 2.5rem;
+}
+
+.admin-alerts-title {
+  font-size: 1.6rem;
+  color: #c00;
+  margin-bottom: 1rem;
+}
+
+.admin-alert-list {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-alert-item {
+  background-color: #fff3f3;
+  border-left: 4px solid #c00;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.1);
+}
+
+.admin-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.admin-action {
+  flex: 1 1 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.admin-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #ff3a3a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  max-width: 220px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.admin-btn:hover {
+  background-color: #c00;
+}

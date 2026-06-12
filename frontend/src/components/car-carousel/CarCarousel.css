@@ -1,0 +1,17 @@
+/* src/components/CarCarousel.css */
+.car-carousel {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .car-carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .car-carousel-item {
+    flex: 0 0 33.33%; /* 3 tarjetas por vista */
+    box-sizing: border-box;
+    padding: 0.5rem; /* Espacio entre tarjetas */
+  }
+  
