@@ -27,7 +27,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("users/", include("apps.users.urls")),
     path("rents/", include("apps.rents.urls")),
-    path("report/", include("apps.reports.urls")),
+    path("reports/", include("apps.reports.urls")),
     path("vehicles/", include("apps.vehicles.urls")),
     path("payments/", include("apps.payments.urls")),
     # DOCUMENTATION API

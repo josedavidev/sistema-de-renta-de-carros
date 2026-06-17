@@ -1,40 +1,40 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
-import { PrivateRoute } from "./components/private-route/PrivateRoute";
+import { PrivateRoute } from "./components/PrivateRoute";
 import { PublicRoute } from "./routes/PublicRoute";
-import { Navbar } from "./components/nav-bar/Navbar";
-import { Footer } from "./components/footer/Footer";
+import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
 
-import { Home } from "./pages/home/Home";
-import { ChoiceVehicle } from "./pages/reservar/ChoiceVehicle";
-import { DataUser } from "./pages/reservar/DataUser";
-import { Payment } from "./pages/reservar/Payment";
-import { Invoice } from "./pages/reservar/Invoice";
-import { CatalogoCarros } from "./pages/catalogo_carros/CatalogoCarros";
-import { MisReservas } from "./pages/mis-reservas/MisReservas";
-import { Login } from "./pages/login/Login";
-import { Register } from "./pages/register/Register";
-import { Ayuda } from "./pages/ayuda/Ayuda";
+import { Home } from "./pages/Home";
+import { ChoiceVehicle } from "./pages/ChoiceVehicle";
+import { DataUser } from "./pages/DataUser";
+import { Payment } from "./pages/Payment";
+import { Invoice } from "./pages/Invoice";
+import { CatalogoCarros } from "./pages/CatalogoCarros";
+import { MisReservas } from "./pages/MisReservas";
+import { Login } from "./pages/Login";
+import { Register } from "./pages/Register";
+import { Ayuda } from "./pages/Ayuda";
 
-import { Admin } from "./pages/employees/Admin";
-import { Receptionist } from "./pages/employees/receptionist";
-import { Informes } from "./pages/informes/Informes";
-import { HistorialReservas } from "./pages/historial-reservas/HistorialReservas";
-import { GestionClientes } from "./pages/gestion-clientes/GestionClientes";
-import { CrearCliente } from "./pages/gestion-clientes/CrearCliente";
-import { EditarCliente } from "./pages/gestion-clientes/EditarCliente";
-import { VerCliente } from "./pages/gestion-clientes/VerCliente";
-import { GestionVehiculos } from "./pages/gestion-vehiculos/GestionVehiculos";
-import { CrearVehiculo } from "./pages/gestion-vehiculos/CrearVehiculo";
-import { EditarVehiculo } from "./pages/gestion-vehiculos/EditarVehiculo";
-import { VerVehiculo } from "./pages/gestion-vehiculos/VerVehiculo";
-import { GestionEmpleados } from "./pages/gestion-empleados/GestionEmpleados";
-import { CrearEmpleado } from "./pages/gestion-empleados/CrearEmpleado";
-import { EditarEmpleado } from "./pages/gestion-empleados/EditarEmpleado";
-import { VerEmpleado } from "./pages/gestion-empleados/VerEmpleado";
-import { CarrosPorCategoria } from "./pages/catalogo_carros/CarrosPorCategoria";
-import { ClientHome } from "./pages/page-client/ClientHome";
+import { Admin } from "./pages/Admin";
+import { Receptionist } from "./pages/receptionist";
+import { Informes } from "./pages/Informes";
+import { HistorialReservas } from "./pages/HistorialReservas";
+import { GestionClientes } from "./pages/GestionClientes";
+import { CrearCliente } from "./pages/CrearCliente";
+import { EditarCliente } from "./pages/EditarCliente";
+import { VerCliente } from "./pages/VerCliente";
+import { GestionVehiculos } from "./pages/GestionVehiculos";
+import { CrearVehiculo } from "./pages/CrearVehiculo";
+import { EditarVehiculo } from "./pages/EditarVehiculo";
+import { VerVehiculo } from "./pages/VerVehiculo";
+import { GestionEmpleados } from "./pages/GestionEmpleados";
+import { CrearEmpleado } from "./pages/CrearEmpleado";
+import { EditarEmpleado } from "./pages/EditarEmpleado";
+import { VerEmpleado } from "./pages/VerEmpleado";
+import { CarrosPorCategoria } from "./pages/CarrosPorCategoria";
+import { ClientHome } from "./pages/ClientHome";
 
 function App() {
   return (
@@ -44,10 +44,10 @@ function App() {
         {/* Todos */}
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/reservar/vehiculo" element={<ChoiceVehicle />} />
-        <Route path="/reservar/datos" element={<DataUser />} />
-        <Route path="/reservar/pago" element={<Payment />} />
-        <Route path="/reservar/factura" element={<Invoice />} />
+        <Route path="/vehiculo" element={<ChoiceVehicle />} />
+        <Route path="/datos" element={<DataUser />} />
+        <Route path="/pago" element={<Payment />} />
+        <Route path="/factura" element={<Invoice />} />
         <Route path="/catalogo" element={<CatalogoCarros />} />
         <Route path="/catalogo/:categoria" element={<CarrosPorCategoria />} />
         <Route path="/mis-reservas" element={<MisReservas />} />
